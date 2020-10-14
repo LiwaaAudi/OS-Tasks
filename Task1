@@ -1,7 +1,11 @@
 :~$ cd
 :~$ mkdir Top\ Secret
+//mkdir command: create a directory 'Top Secret'
 :~$ cat >bin.txt
+//create a .txt file named bin 
 :~$ ls /bin >bin.txt
+//save the contents of /bin in bin.txt file
 :~$ cp bin.txt .bin.txt
+//make a copy of bin.txt in .bin.txt which is hidden "."
 :~$ mv .bin.txt Top\ Secret
-
+//move ou hidden .bin.txt to already created 'Top Secret'
