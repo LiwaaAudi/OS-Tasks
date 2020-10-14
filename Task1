@@ -1,0 +1,7 @@
+:~$ cd
+:~$ mkdir Top\ Secret
+:~$ cat >bin.txt
+:~$ ls /bin >bin.txt
+:~$ cp bin.txt .bin.txt
+:~$ mv .bin.txt Top\ Secret
+
