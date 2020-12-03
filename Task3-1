@@ -1,14 +1,14 @@
 #!/bin/bash
+#user enters file name
 echo "enter the first file"
-#user enters first file name
 read a
-#computer read file name
 echo "enter the second file"
 read b
-count1=$(wc -l < $a)
 #first file count
-count2=$(wc -l < $b)
+count1=$(wc -l < $a)
 #second file count
+count2=$(wc -l < $b)
+#compare the two files
 if [ $f -gt $d ]
 then
 echo $a " is bigger"
