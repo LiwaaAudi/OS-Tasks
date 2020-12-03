@@ -1,0 +1,18 @@
+#!/bin/bash
+echo  "Input the firstdir..."
+read a
+echo "Input the second dir..."
+read b
+    count1=$(find $a -type f | wc -l)
+    count2=$(find $b -type f | wc -l)
+    #Compare the number of files in the two directories
+    if [ $count1 -gt $count2 ]
+         then
+         echo "first Directory has more files"
+    else if [ $count1 -eq $count2 ]
+         then
+         echo "Both Directories have same number of files"
+    else
+         echo "Second Directory has greater number of files"
+    fi
+    fi
