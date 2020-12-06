@@ -1,0 +1,6 @@
+echo " choose the line where you want to start"
+read a
+echo " choose the ending line "
+read b
+#to print from a to b
+sed -n "${a},${b} p" task2text.txt
