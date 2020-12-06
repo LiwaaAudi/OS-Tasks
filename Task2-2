@@ -1,0 +1,4 @@
+echo "choose the line to print"
+read a
+#to print the line
+sed "${a}q;d" task2text.txt
