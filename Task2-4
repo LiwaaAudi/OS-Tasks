@@ -1,0 +1,4 @@
+echo " enter the line to remove"
+read a
+#to remove entered file
+sed -i ${a}'d' task2text.txt
