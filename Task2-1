@@ -1,0 +1,7 @@
+#!/bin/bash
+echo"emter 1st number"
+read a
+echo"enter 2nd number"
+read b
+# Displaying the product in task21.txt
+expr $a \* $b > task21.txt
