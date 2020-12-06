@@ -1,0 +1,26 @@
+#!/bin/bash
+for d in * ; do
+        if [ -d "$d" ]; then
+                echo "$d"
+        fi
+done
+maxsize=0
+file=""
+for i in $(find /home/liwaa/task4 -type f)
+do
+        echo $i $(stat -c %s $i)
+        if [ $(stat -c %s $i) -gt $maxsize ]; then
+                file=$i
+        fi
+done
+echo "The biggest file is: $file"
+s=0
+dir=""
+for i in $(find * -type d)
+do
+        if [ $s -lt $(ls -f $i | wc -l) ]; then
+                s=$(ls -f $i |wc -l)
+                dir=$i
+        fi
+done
+echo "The folder has the highest amount of files: $dir"
