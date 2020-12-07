@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Choose a directory"
+read a
+cd $a
+ls -d -l .* | awk '{if ($5 != 0) print $9}'
