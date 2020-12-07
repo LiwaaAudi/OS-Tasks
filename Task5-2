@@ -1,0 +1,9 @@
+#!/bin/bash
+ls
+echo "Choose a text file"
+read a
+perl -ne 'print length()."  line $.  $_"' $a | sort -n
+echo " "
+echo "the longest line in $a is the last line in the list above:"
+echo " "
+egrep -Em1 "^.{$(wc -L < $a)}\$" $a
