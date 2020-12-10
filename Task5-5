@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "choose a directory"
+read a
+echo "Deleted files and directories:"
+echo " "
+for i in $(find $a -empty -print)
+do
+        stat $i
+        rm $i -d
+done
