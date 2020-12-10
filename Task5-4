@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 echo "choose a directory"
 read a
 find $a -type f -perm 444
