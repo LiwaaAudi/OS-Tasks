@@ -1,0 +1,6 @@
+echo "enter date, yyyy-mm-dd"
+read date
+echo choose a directory
+read a
+echo "the list of files in selected directory that are accessed earlier than entered date:" 
+find $a -type f ! -newerat $date
